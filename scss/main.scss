@@ -1,0 +1,292 @@
+html, body{
+    width: 100%;
+    margin: 0;
+    font-size: 12pt;
+    position: relative;
+}
+
+.arrow {
+    text-align: center;
+    font-size: 2rem;
+    bottom: 5px;
+    position: absolute;
+    width: 100%;
+}
+
+#home{
+    background-image: url("../images/negative-space-black-forest-dawn.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+    right: 0;
+    top: 0; 
+
+    
+    #text-wrapper{
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+
+        #text-container{
+            display: flex;
+            height: 40vh;
+            width: 80%;
+            flex-direction: column;
+            justify-content: space-between;
+            color: white;
+            text-align: center;
+        
+            h2{
+                font-weight: 400;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .arrow i{
+        color: white;
+    }
+
+}
+
+#menu{
+    height: 35px;
+}
+
+#links{
+    display: block;
+    text-align: center;
+    margin: 0;
+
+    li{
+        list-style: none;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+#icon {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 0;
+    font-size: 2rem; 
+    color: white;   
+}
+
+nav{
+    background-color: rgba($color: #fff, $alpha: 0.2);
+
+}
+#links{
+    display: none;
+}
+
+#about-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    margin: 0 auto;
+
+    .arrow{
+        display: block;
+
+        i{
+            color: black;
+        }
+    }
+
+    .about-container{
+        width: 80%;
+
+        h3{
+            font-size: 2.2rem;
+        }
+
+        p{
+            text-align: center;
+        }
+
+        .image{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+            img{
+                width: 100%;
+                border-radius: 50%;
+                box-shadow: 0px 4px 40px -12px;
+            }
+        }
+    }
+
+    .info-box{
+        background-color: lightgrey;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 5px;
+    
+        i{
+            font-size: 2.2rem;
+        }
+    
+        p{
+            text-align: left;
+            width: 75%;
+            margin: 0 auto;
+            padding: 10% 0 10% 0;
+            font-size: 1.1rem;
+        }
+    
+    }
+
+
+}
+
+#text-container{
+    width: 80%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#contact{
+
+    background-color: black;
+    height: 100vh;
+
+    #contact-container{
+        display:flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+
+        ul{
+            margin: 0 auto;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        li{
+            color: white;
+            list-style: none;
+            font-size: 1.8rem;
+        }
+
+        i{
+            font-size: 2rem;
+            padding-right: 10px;
+                    
+        }
+    }
+
+}
+
+@media screen and (min-width:768px){ 
+
+    #links-wrapper{
+        width: 100%;
+        position: relative;
+        background-color: #ffffff01;
+        height: 10vh;
+    }
+
+    #links{
+        display: inherit;
+        height: 10vh;
+        position: absolute;
+        right: 0;
+        width: 20%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        li{
+            display: inline;
+        }
+    }
+
+    #about-wrapper{
+        width: 80%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:space-evenly;
+    
+        .arrow{
+            display: block;
+            margin-top: 10px;
+        
+            i{
+                color: black;
+            }
+        }
+    
+        .about-container{
+            width: 35%;
+            margin-bottom: 80px;
+        }
+    
+        h3{
+            font-size: 2.2rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        .info-box{
+ 
+            p{
+                font-size: 0.8rem;
+            }
+
+            i{
+                font-size: 2rem;
+            }
+        } 
+        
+    }
+    #menu{
+        display: none;
+    }
+
+    #contact{
+        height: 30vh;
+
+        #contact-container{
+            flex-direction: row;
+
+            ul{
+                width: auto;
+                padding-top: 3%;
+            }
+
+            li{
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+} 
+
+@media screen and (min-width:1000px){ 
+
+    #links{
+        width: 15%;
+    }
+
+}
