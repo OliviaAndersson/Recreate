@@ -90,14 +90,8 @@ nav{
     display: none;
 }
 
-#about-wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+#about{
     position: relative;
-    gap: 30px;
-    margin: 0 auto;
-
     .arrow{
         display: block;
 
@@ -105,6 +99,15 @@ nav{
             color: black;
         }
     }
+}
+#about-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    gap: 30px;
+    margin: 0 auto;
+    padding-bottom: 60px;
 
     .about-container{
         width: 80%;

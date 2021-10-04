@@ -84,6 +84,16 @@ nav {
   display: none;
 }
 
+#about {
+  position: relative;
+}
+#about .arrow {
+  display: block;
+}
+#about .arrow i {
+  color: black;
+}
+
 #about-wrapper {
   display: flex;
   flex-direction: column;
@@ -91,12 +101,7 @@ nav {
   position: relative;
   gap: 30px;
   margin: 0 auto;
-}
-#about-wrapper .arrow {
-  display: block;
-}
-#about-wrapper .arrow i {
-  color: black;
+  padding-bottom: 50px;
 }
 #about-wrapper .about-container {
   width: 80%;
